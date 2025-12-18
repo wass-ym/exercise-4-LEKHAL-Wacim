@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fable le corbeau et le renard</title>
+    <link rel="stylesheet" href="style-2.css">
+   <link rel="stylesheet" href="mainnav.css">
+   <script src="mainnav.js"></script>
+</head>
+
+<body>
+
+     <header id="mainnav" aria-label="Navigation principale">
+    <!-- aria-label offre une description accessible du bloc de navigation
+    Les attributs ARIA (Accessible Rich Internet Applications) donnent aux lecteurs d’écran et autres outils d’accessibilité des infos que le HTML seul ne fournit pas toujours : rôle d’un élément, état (ouvert, désactivé…), relations entre composants. 
+    -->
+    <div class="mainnav__inner">
+      <div class="mainnav__title" aria-label="Identité">
+        LEKHAL / Wacim / 24011398
+      </div>
+
+      <button
+        class="mainnav__burger"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-controls="mainnav-drawer"
+        aria-expanded="false"
+      >
+        <!-- aria-controls & aria-expanded pilotent l'état du menu burger -->
+        <span class="mainnav__burgerBars" aria-hidden="true">
+          <span class="mainnav__bar"></span>
+          <span class="mainnav__bar"></span>
+          <span class="mainnav__bar"></span>
+        </span>
+      </button>
+    </div>
+
+    <!-- Overlay + volet -->
+    <!-- data-mainnav-close + hidden servent au pilotage JS & à l'accessibilité -->
+    <div class="mainnav__overlay" data-mainnav-close tabindex="-1" hidden></div>
+
+    <aside
+      id="mainnav-drawer"
+      class="mainnav__drawer"
+      aria-label="Menu"
+      aria-hidden="true"
+      hidden
+    >
+      <!-- L'élément aside moderne héberge le tiroir de navigation -->
+      <div class="mainnav__drawerHeader">
+        <div class="mainnav__drawerTitle">Menu</div>
+        <button class="mainnav__close" type="button" aria-label="Fermer le menu" data-mainnav-close>
+          ✕
+        </button>
+      </div>
+
+      <nav class="mainnav__menu" aria-label="Liens">
+        <a class="mainnav__link" href="exercise-1.html">exercise-1</a>
+        <a class="mainnav__link" href="exercise-2.html">exercise-2</a>
+        <a class="mainnav__link" href="exercise-3.html">exercise-3</a>
+      </nav>
+
+      <div class="mainnav__drawerFooter">
+        <small>Navigation demo</small>
+      </div>
+    </aside>
+  </header>
+
+     <div id="cover">
+    <img src="C:\Users\lekha\Desktop\tp2 LEKHAL Wacim\corb.gif" alt="fable">
+    </div>
+
+    <div id="titre">
+    <h1>Le Corbeau et le Renarad</h1>
+    </div>
+    
+    <div id="text">
+        <p>
+              Maître Corbeau, sur un arbre perché,<br>
+              Tenait en son bec un fromage.<br>
+              Maître Renard, par l'odeur alléché,<br>
+              Lui tint à peu près ce langage :<br>
+              Et bonjour, Monsieur du Corbeau,<br>
+              Que vous êtes joli ! que vous me semblez beau !<br>
+              Sans mentir, si votre ramage<br>
+              Se rapporte à votre plumage,<br>
+              Vous êtes le Phénix des hôtes de ces bois.<br>
+              À ces mots le Corbeau ne se sent pas de joie,<br>
+              Et pour montrer sa belle voix,<br>
+              Il ouvre un large bec, laisse tomber sa proie.<br>
+              Le Renard s'en saisit, et dit : Mon bon Monsieur,<br>
+              Apprenez que tout flatteur<br>
+              Vit aux dépens de celui qui l'écoute.<br>
+              Cette leçon vaut bien un fromage sans doute.<br>
+              Le Corbeau honteux et confus<br>
+             Jura, mais un peu tard, qu'on ne l'y prendrait plus.<br>
+        </p>
+    </div>
+
+</body>
+</html>
